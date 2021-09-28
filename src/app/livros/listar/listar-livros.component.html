@@ -4,7 +4,8 @@
     <tbody>
         <tr>
             <th>Livros</th>
-            <th>Concluída</th>
+            <th>Autor</th>
+            <th>Lido</th>
             <th class="text-center">
                 <a class="btn btn-xs btn-success">
                     <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo
@@ -14,6 +15,9 @@
         <tr *ngFor="let livro of livros">
             <td [class.danger]="!livro.lido">
                 {{ livro.nome }}
+            </td>
+            <td [class.danger]="!livro.lido">
+                {{ livro.autor }}
             </td>
             <td style="width: 70px" class="text-center">
                 <input type="checkbox">
