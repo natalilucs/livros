@@ -13,11 +13,7 @@ export class ListarLivrosComponent implements OnInit {
   constructor(private livroService : LivroService) { }
 
   ngOnInit() {
-    this.livros = this.listarTodos();
-    this.livros = [
-      new Livro(1, "Dom Casmurro", "Machado de Assis" ,false),
-      new Livro(2, "O Diário de Anne Frank", "Anne Frank" ,true)
-    ]
+    this.livros = this.listarTodos(); 
 
   }
   
